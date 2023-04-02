@@ -14,7 +14,6 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
-import EmailIcon from '@mui/icons-material/Email';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
@@ -167,7 +166,7 @@ const Header = () => {
           PROJECTS
         </Typography>
         <Typography sx={{fontFamily:"Fredericka the Great",fontSize:"4.1rem",transform:"rotateX(180deg)",marginTop:"-3rem",textAlign:"center",color:"#ddffbb31"}}>PROJECTS</Typography>
-        <Box sx={{display:"flex",flexWrap:"wrap",justifyContent:"center",marginTop:"2rem"}} >
+        <Box sx={{display:"flex",flexWrap:"wrap",justifyContent:"center",margin:"2rem 7rem"}} >
           
           <Box className="cardGif" sx={{padding:"1rem",margin:"1.5rem 1rem"}}>
             <Card sx={{ maxWidth: 345,margin:"1rem 1rem",backgroundColor:"#000000b3"}}>
@@ -297,14 +296,7 @@ const Header = () => {
           </Box> 
           <Box sx={{margin:"1rem",padding:"1rem",borderRadius:"100px"}} className="contactGif">
             <Button sx={{fontFamily:"Julius Sans One",fontWeight:"900",fontSize:"1rem",position:"relative",margin: "auto",color:"white",padding:"1rem"}}>
-                <Link href='https://twitter.com/Hilitomilito1' target='__blank' underline='none' sx={{color:"#ffffffde"}} ><TwitterIcon sx={{width:"4rem",height:"4rem"}}/></Link>
-            </Button>
-          </Box>  
-          <Box sx={{margin:"1rem",padding:"1rem",borderRadius:"100px"}} className="contactGif">
-             <Button sx={{fontFamily:"Julius Sans One",fontWeight:"900",fontSize:"1rem",position:"relative",margin: "auto",color:"white",padding:"1rem"}}>
-                <Link href='' target='__blank' underline='none' sx={{color:"#ffffffde"}} >
-                  <EmailIcon sx={{width:"4rem",height:"4rem"}}/>
-                </Link>
+                <Link href='https://twitter.com/Hilitomilito1' target='__blank' underline='none' sx={{color:"#ffffffde"}}><TwitterIcon sx={{width:"4rem",height:"4rem"}}/></Link>
             </Button>
           </Box>  
         </Box>
