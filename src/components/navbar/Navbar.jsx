@@ -30,7 +30,7 @@ const Navbar = () => {
   
   return (
     <div>
-        <AppBar position="fixed" sx={{backgroundColor:"#18122bc0",backdropFilter: "blur(2px)"}}>
+        <AppBar position="fixed" sx={{backgroundColor:"#1922102c",backdropFilter: "blur(5px)"}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -41,12 +41,13 @@ const Navbar = () => {
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
-              fontFamily: 'Yeseva One',
+              fontFamily: 'Homemade Apple',
               fontSize:"3rem",
               fontWeight: 500,
               letterSpacing: '.3rem',
               color: '#a197c4',
               textDecoration: 'none',
+              marginTop:"1rem"
             }}
           >
             Hilal Dedek
@@ -61,7 +62,7 @@ const Navbar = () => {
               onClick={handleOpenNavMenu}
               color="#b5aeca"
             >
-              <MenuIcon />
+              <MenuIcon sx={{color:"white"}}/>
             </IconButton>
             <Menu
               id="menu-appbar"
@@ -83,13 +84,13 @@ const Navbar = () => {
             >
             
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu} >
+                <MenuItem key={page} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center"sx={{color:"#18122B",fontFamily:"Julius Sans One"}}>{page}</Typography>
                 </MenuItem>
-                
               ))}
             </Menu>
           </Box>
+          
           <Typography
             variant="h5"
             noWrap
@@ -99,12 +100,13 @@ const Navbar = () => {
               mr: 2,
               display: { xs: 'flex', md: 'none' },
               flexGrow: 1,
-              fontFamily: 'Yeseva One',
+              fontFamily: 'Homemade Apple',
               fontWeight: 500,
               fontSize:"2rem",
               letterSpacing: '.3rem',
               color: '#a197c4',
               textDecoration: 'none',
+              marginTop:"1rem"
             }}
           >
             Hilal Dedek
@@ -114,12 +116,13 @@ const Navbar = () => {
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: '#18122bc1', display: 'block' ,fontFamily:"Julius Sans One",fontSize:"1.2rem",fontWeight:800}}
+                sx={{ my: 2, color: '#DDFFBB', display: 'block' ,fontFamily:"Julius Sans One",fontSize:"1.2rem",fontWeight:800,margin:"0 1rem"}}
               >
                 {page}
               </Button>
             ))}
           </Box>
+          
         </Toolbar>
       </Container>
     </AppBar>

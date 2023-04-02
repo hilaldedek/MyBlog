@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
-.animation:hover{
-    background-color: #2f2d325c;
-}
 .card:hover{
     background-color: #2f2d325c;
 }
-.moreButton{
+.contactGif{
     background-image: url("../../assets/gif2.gif");}
 
 .imgBox{
     background-image: url("../../assets/gif3.gif");
+}
+.cardGif{
+    background-image: url("../../assets/gif4.gif");
+}
+.liveButton:hover{
+    background-image: url("../../assets/gif4.gif");
 }
