@@ -30,7 +30,7 @@ const Navbar = () => {
   
   return (
     <div>
-        <AppBar position="fixed" sx={{backgroundColor:"#18122bc0"}}>
+        <AppBar position="fixed" sx={{backgroundColor:"#18122bc0",backdropFilter: "blur(2px)"}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -45,7 +45,7 @@ const Navbar = () => {
               fontSize:"3rem",
               fontWeight: 500,
               letterSpacing: '.3rem',
-              color: '#18122B',
+              color: '#a197c4',
               textDecoration: 'none',
             }}
           >
@@ -59,7 +59,7 @@ const Navbar = () => {
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
-              color="#635985"
+              color="#b5aeca"
             >
               <MenuIcon />
             </IconButton>
@@ -103,7 +103,7 @@ const Navbar = () => {
               fontWeight: 500,
               fontSize:"2rem",
               letterSpacing: '.3rem',
-              color: '#18122B',
+              color: '#a197c4',
               textDecoration: 'none',
             }}
           >
