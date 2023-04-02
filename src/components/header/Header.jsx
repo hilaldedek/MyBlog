@@ -15,13 +15,134 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import EmailIcon from '@mui/icons-material/Email';
+import AppBar from '@mui/material/AppBar';
+import Toolbar from '@mui/material/Toolbar';
+import IconButton from '@mui/material/IconButton';
+import Menu from '@mui/material/Menu';
+import MenuIcon from '@mui/icons-material/Menu';
+import Container from '@mui/material/Container';
+
+
 
 
 const Header = () => {
+  const [anchorElNav, setAnchorElNav] = React.useState(null);
+  
+    const handleOpenNavMenu = (event) => {
+      setAnchorElNav(event.currentTarget);
+    };
+    
+  
+    const handleCloseNavMenu = () => {
+      setAnchorElNav(null);
+    };
   const year=new Date().getFullYear();
   return (
     
     <div>
+ {/* NAVBAR */}
+<AppBar position="fixed" sx={{backgroundColor:"#1922102c",backdropFilter: "blur(5px)"}}>
+      <Container maxWidth="xl">
+        <Toolbar disableGutters>
+          <Typography
+            variant="h6"
+            noWrap
+            component="a"
+            href="/"
+            sx={{
+              mr: 2,
+              display: { xs: 'none', md: 'flex' },
+              fontFamily: 'Homemade Apple',
+              fontSize:"3rem",
+              fontWeight: 500,
+              letterSpacing: '.3rem',
+              color: '#a197c4',
+              textDecoration: 'none',
+              marginTop:"1rem"
+            }}
+          >
+            Hilal Dedek
+          </Typography>
+
+          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+            <IconButton
+              size="large"
+              aria-label="account of current user"
+              aria-controls="menu-appbar"
+              aria-haspopup="true"
+              onClick={handleOpenNavMenu}
+              color="#b5aeca"
+            >
+              <MenuIcon sx={{color:"white"}}/>
+            </IconButton>
+            <Menu
+              id="menu-appbar"
+              anchorEl={anchorElNav}
+              anchorOrigin={{
+                vertical: 'bottom',
+                horizontal: 'left',
+              }}
+              keepMounted
+              transformOrigin={{
+                vertical: 'top',
+                horizontal: 'left',
+              }}
+              open={Boolean(anchorElNav)}
+              onClose={handleCloseNavMenu}
+              sx={{
+                display: { xs: 'block', md: 'none'},
+              }}
+            >
+            
+              
+                <Box onClick={handleCloseNavMenu} sx={{display:"flex",flexDirection:"column"}}>
+                  <Button textAlign="center"sx={{fontFamily:"Julius Sans One"}}><Link href='#projects' sx={{textDecoration:"none",color:"#18122B"}}>Projects</Link>
+                    </Button>
+                    <Button textAlign="center"sx={{color:"#18122B",fontFamily:"Julius Sans One"}}><Link href='#contact' sx={{textDecoration:"none",color:"#18122B"}}>Contact</Link>
+                    </Button>
+                </Box>
+              
+            </Menu>
+          </Box>
+          
+          <Typography
+            variant="h5"
+            noWrap
+            component="a"
+            href=""
+            sx={{
+              mr: 2,
+              display: { xs: 'flex', md: 'none' },
+              flexGrow: 1,
+              fontFamily: 'Homemade Apple',
+              fontWeight: 500,
+              fontSize:"2rem",
+              letterSpacing: '.3rem',
+              color: '#a197c4',
+              textDecoration: 'none',
+              marginTop:"1rem"
+            }}
+          >
+            Hilal Dedek
+          </Typography>
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+            
+              <Button className='buttonBox'
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, display: 'block' ,fontFamily:"Julius Sans One",fontSize:"1.2rem",fontWeight:800,margin:"0 1rem"}}
+              ><Link href='#projects' sx={{textDecoration:"none",color: '#DDFFBB'}}>Projects</Link>
+                
+              </Button>
+              <Button className='buttonBox'
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, display: 'block' ,fontFamily:"Julius Sans One",fontSize:"1.2rem",fontWeight:800,margin:"0 1rem"}}
+              ><Link href='#contact' sx={{textDecoration:"none",color: '#DDFFBB'}}>Contact</Link>
+              </Button>
+          </Box>
+          
+        </Toolbar>
+      </Container>
+    </AppBar>
 
       {/* WHO AM I? SECTION */}
 
@@ -33,7 +154,7 @@ const Header = () => {
       <Box sx={{position:"relative",margin:"auto"}}>
         <Typography  sx={{fontFamily:"Fredericka the Great",fontSize:"4.1rem",paddingTop:"2rem",textAlign:"center",color:"#DDFFBB"}}>WHO AM I?</Typography>
         <Typography sx={{fontFamily:"Fredericka the Great",fontSize:"4.1rem",transform:"rotateX(180deg)",marginTop:"-3rem",textAlign:"center",color:"#ddffbb31"}}>WHO AM I?</Typography>
-        <Typography component="p" sx={{fontFamily:"Julius Sans One",textAlign:"center",fontWeight:"500",fontSize:"1.2rem",paddingBottom:"4rem",color:"#F6F1E9"}}>Hello! I am Hilal. I am a 2nd year Computer Engineering student. I'm improve myself on the Front-end.</Typography>
+        <Typography component="p" sx={{fontFamily:"Julius Sans One",textAlign:"center",fontWeight:"500",fontSize:"1.2rem",paddingBottom:"4rem",color:"#F6F1E9",margin:"1rem 5rem"}}>Hello, I'm Hilal. I am a computer engineering student. I love to code in my spare time. I am developing myself in the field of web development.</Typography>
       </Box> 
       <Box>
        </Box> 
@@ -41,7 +162,7 @@ const Header = () => {
 
       {/* PROJECTS SECTION */}
 
-      <Box className="card" sx={{paddingTop:"4rem",paddingBottom:"4rem"}}>
+      <Box className="card" sx={{paddingTop:"4rem",paddingBottom:"4rem"}} id="projects">
         <Typography sx={{fontFamily:"Fredericka the Great",fontSize:"4.1rem",textAlign:"center",color:"#DDFFBB"}}>
           PROJECTS
         </Typography>
@@ -145,41 +266,41 @@ const Header = () => {
             
         </Box>
         <Box sx={{display:"flex",justifyContent:"center",marginTop:"2rem"}}>
-          <Button sx={{fontFamily:"Julius Sans One",fontWeight:"900",fontSize:"1rem",padding:"1rem",}} className='liveButton'>
+          <Button sx={{fontFamily:"Julius Sans One",fontWeight:"900",fontSize:"1rem",padding:"1rem",}} >
                     <Link href='https://github.com/hilaldedek?tab=repositories' target='__blank' underline='none' sx={{color:"#F6F1E9"}}>More Project</Link>
           </Button>
         </Box>
       </Box>
      {/* CONTACT SECTION */}
-     <Box sx={{paddingTop:"4rem",paddingBottom:"4rem"}} className="card">
+     <Box sx={{paddingTop:"4rem",paddingBottom:"4rem"}} className="card" id="contact">
      <Typography sx={{fontFamily:"Fredericka the Great",fontSize:"3.2rem",textAlign:"center",color:"#DDFFBB"}}>
           CONTACT ME
         </Typography>
         <Typography sx={{fontFamily:"Fredericka the Great",fontSize:"3.2rem",transform:"rotateX(180deg)",marginTop:"-2rem",textAlign:"center",color:"#ddffbb31"}}>CONTACT ME</Typography>
         <Box sx={{display:"flex",flexWrap:"wrap",justifyContent:"center",marginTop:"1rem"}}>
-          <Box sx={{margin:"1rem",padding:"1rem"}} className="contactGif">
+          <Box sx={{margin:"1rem",padding:"1rem",borderRadius:"100px"}} className="contactGif">
             <Button sx={{fontFamily:"Julius Sans One",fontWeight:"900",fontSize:"1rem",position:"relative",margin: "auto",color:"white",padding:"1rem"}}>
                 <Link href='https://www.linkedin.com/in/hil%C3%A2ldedek/' target='__blank' sx={{color:"#ffffffde"}}><LinkedInIcon
             sx={{width:"4rem",height:"4rem"}}
             /></Link>
             </Button>
           </Box>
-          <Box sx={{margin:"1rem",padding:"1rem"}} className="contactGif">
+          <Box sx={{margin:"1rem",padding:"1rem",borderRadius:"100px"}} className="contactGif">
             <Button sx={{fontFamily:"Julius Sans One",fontWeight:"900",fontSize:"1rem",position:"relative",margin: "auto",padding:"1rem"}} >
                 <Link href='https://github.com/hilaldedek' target='__blank' sx={{color:"#ffffffde"}} ><GitHubIcon sx={{width:"4rem",height:"4rem"}}/></Link>
             </Button>
           </Box>  
-          <Box sx={{margin:"1rem",padding:"1rem"}} className="contactGif">
+          <Box sx={{margin:"1rem",padding:"1rem",borderRadius:"100px"}} className="contactGif">
             <Button sx={{fontFamily:"Julius Sans One",fontWeight:"900",fontSize:"1rem",position:"relative",margin: "auto",color:"white",padding:"1rem"}}>
                 <Link href='https://www.instagram.com/hilaldedek/' target='__blank' underline='none' sx={{color:"#ffffffde"}}><InstagramIcon sx={{width:"4rem",height:"4rem"}}/></Link>
             </Button>
           </Box> 
-          <Box sx={{margin:"1rem",padding:"1rem"}} className="contactGif">
+          <Box sx={{margin:"1rem",padding:"1rem",borderRadius:"100px"}} className="contactGif">
             <Button sx={{fontFamily:"Julius Sans One",fontWeight:"900",fontSize:"1rem",position:"relative",margin: "auto",color:"white",padding:"1rem"}}>
                 <Link href='https://twitter.com/Hilitomilito1' target='__blank' underline='none' sx={{color:"#ffffffde"}} ><TwitterIcon sx={{width:"4rem",height:"4rem"}}/></Link>
             </Button>
           </Box>  
-          <Box sx={{margin:"1rem",padding:"1rem"}} className="contactGif">
+          <Box sx={{margin:"1rem",padding:"1rem",borderRadius:"100px"}} className="contactGif">
              <Button sx={{fontFamily:"Julius Sans One",fontWeight:"900",fontSize:"1rem",position:"relative",margin: "auto",color:"white",padding:"1rem"}}>
                 <Link href='' target='__blank' underline='none' sx={{color:"#ffffffde"}} >
                   <EmailIcon sx={{width:"4rem",height:"4rem"}}/>

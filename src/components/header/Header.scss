@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
 .card:hover{
     background-color: #2f2d325c;
 }
 .contactGif{
-    background-image: url("../../assets/gif2.gif");}
+    background-image: url("../../assets/gif1.gif");}
 
 .imgBox{
     background-image: url("../../assets/gif3.gif");
@@ -14,4 +17,7 @@
 }
 .liveButton:hover{
     background-image: url("../../assets/gif4.gif");
+}
+.buttonBox:hover{
+    background-image: url("../../assets/gif5.gif");
 }
