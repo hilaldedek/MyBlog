@@ -72,7 +72,7 @@ const Header = () => {
               onClick={handleOpenNavMenu}
               color="#b5aeca"
             >
-              <MenuIcon sx={{color:"white"}}/>
+              <MenuIcon sx={{color:"#DDFFBB"}}/>
             </IconButton>
             <Menu
               id="menu-appbar"
@@ -95,6 +95,8 @@ const Header = () => {
             
               
                 <Box onClick={handleCloseNavMenu} sx={{display:"flex",flexDirection:"column"}}>
+                <Button textAlign="center"sx={{fontFamily:"Julius Sans One"}}><Link href='#skills' sx={{textDecoration:"none",color:"#18122B"}}>Skills</Link>
+                    </Button>
                   <Button textAlign="center"sx={{fontFamily:"Julius Sans One"}}><Link href='#projects' sx={{textDecoration:"none",color:"#18122B"}}>Projects</Link>
                     </Button>
                     <Button textAlign="center"sx={{color:"#18122B",fontFamily:"Julius Sans One"}}><Link href='#contact' sx={{textDecoration:"none",color:"#18122B"}}>Contact</Link>
@@ -125,12 +127,15 @@ const Header = () => {
             Hilal Dedek
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            
+              <Button className='buttonBox'
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, display: 'block' ,fontFamily:"Julius Sans One",fontSize:"1.2rem",fontWeight:800,margin:"0 1rem"}}
+              ><Link href='#skills' sx={{textDecoration:"none",color: '#DDFFBB'}}>Skills</Link>
+              </Button>
               <Button className='buttonBox'
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, display: 'block' ,fontFamily:"Julius Sans One",fontSize:"1.2rem",fontWeight:800,margin:"0 1rem"}}
               ><Link href='#projects' sx={{textDecoration:"none",color: '#DDFFBB'}}>Projects</Link>
-                
               </Button>
               <Button className='buttonBox'
                 onClick={handleCloseNavMenu}
@@ -147,7 +152,7 @@ const Header = () => {
 
       <Box sx={{display:"flex",flexWrap:"wrap",paddingTop:"7rem",paddingBottom:"4rem"}}className='card'>
         <Box sx={{position:"relative",margin:"auto",padding:"2rem 1rem"}} className="imgBox">
-          <img src={me} alt="profil" width={"auto"} height={"400remuto"}/>
+          <img src={me} alt="profil" width={"auto"} height={"400rem"}/>
         </Box>
       
       <Box sx={{position:"relative",margin:"auto"}}>
@@ -159,6 +164,74 @@ const Header = () => {
        </Box> 
       </Box>
 
+      {/* SKILLS SECTİON */}
+      <Box className="card" sx={{padding:"1rem"}}>
+        <Box sx={{display:"flex",flexWrap:"wrap",justifyContent:"center"}} id="skills"> 
+      <Box sx={{marginBottom:"-4rem"}}>
+        <Typography  sx={{fontFamily:"Fredericka the Great",fontSize:"4.1rem",paddingTop:"2rem",textAlign:"center",color:"#DDFFBB"}}>TECHNICAL</Typography>
+        <Typography sx={{fontFamily:"Fredericka the Great",fontSize:"4.1rem",transform:"rotateX(180deg)",marginTop:"-3rem",textAlign:"center",color:"#ddffbb31"}}>TECHNICAL</Typography>
+      </Box>
+      <Box sx={{marginLeft:"1rem"}}>
+        <Typography  sx={{fontFamily:"Fredericka the Great",fontSize:"4.1rem",paddingTop:"2rem",textAlign:"center",color:"#DDFFBB"}}>SKILLS</Typography>
+        <Typography sx={{fontFamily:"Fredericka the Great",fontSize:"4.1rem",transform:"rotateX(180deg)",marginTop:"-3rem",textAlign:"center",color:"#ddffbb31"}}>SKILLS</Typography>
+      </Box>
+    </Box>
+    <Box>
+        <Box sx={{display:"flex",flexWrap:"wrap", justifyContent:"center",marginTop:"2rem"}}>
+              <Button sx={{fontFamily:"Julius Sans One",fontWeight:"900",fontSize:"1rem",padding:"1rem",color:"white",margin:"1rem"}} className='skillsButton'>
+                        JavaScript
+              </Button>
+              <Button sx={{fontFamily:"Julius Sans One",fontWeight:"900",fontSize:"1rem",padding:"1rem",color:"white",margin:"1rem"}} className='skillsButton'>
+                        TypeScript
+              </Button>
+              <Button sx={{fontFamily:"Julius Sans One",fontWeight:"900",fontSize:"1rem",padding:"1rem",color:"white",margin:"1rem"}} className='skillsButton'>
+                        JQuery
+              </Button>
+              <Button sx={{fontFamily:"Julius Sans One",fontWeight:"900",fontSize:"1rem",padding:"1rem",color:"white",margin:"1rem"}} className='skillsButton'>
+                        React
+              </Button>
+              <Button sx={{fontFamily:"Julius Sans One",fontWeight:"900",fontSize:"1rem",padding:"1rem",color:"white",margin:"1rem"}} className='skillsButton'>
+                        Redux
+              </Button>
+              <Button sx={{fontFamily:"Julius Sans One",fontWeight:"900",fontSize:"1rem",padding:"1rem",color:"white",margin:"1rem"}} className='skillsButton'>
+                        HTML
+              </Button>
+              <Button sx={{fontFamily:"Julius Sans One",fontWeight:"900",fontSize:"1rem",padding:"1rem",color:"white",margin:"1rem"}} className='skillsButton'>
+                        CSS
+              </Button>
+              <Button sx={{fontFamily:"Julius Sans One",fontWeight:"900",fontSize:"1rem",padding:"1rem",color:"white",margin:"1rem"}} className='skillsButton'>
+                        Sass
+              </Button>
+              <Button sx={{fontFamily:"Julius Sans One",fontWeight:"900",fontSize:"1rem",padding:"1rem",color:"white",margin:"1rem"}} className='skillsButton'>
+                        Styled Components
+              </Button>
+              <Button sx={{fontFamily:"Julius Sans One",fontWeight:"900",fontSize:"1rem",padding:"1rem",color:"white",margin:"1rem"}} className='skillsButton'>
+                        Tailwind CSS
+              </Button>
+              <Button sx={{fontFamily:"Julius Sans One",fontWeight:"900",fontSize:"1rem",padding:"1rem",color:"white",margin:"1rem"}} className='skillsButton'>
+                        Material UI
+              </Button>
+              <Button sx={{fontFamily:"Julius Sans One",fontWeight:"900",fontSize:"1rem",padding:"1rem",color:"white",margin:"1rem"}} className='skillsButton'>
+                        Bootstrap
+              </Button>
+              <Button sx={{fontFamily:"Julius Sans One",fontWeight:"900",fontSize:"1rem",padding:"1rem",color:"white",margin:"1rem"}} className='skillsButton'>
+                        Git
+              </Button>
+              <Button sx={{fontFamily:"Julius Sans One",fontWeight:"900",fontSize:"1rem",padding:"1rem",color:"white",margin:"1rem"}} className='skillsButton'>
+                        GitHub
+              </Button>
+              <Button sx={{fontFamily:"Julius Sans One",fontWeight:"900",fontSize:"1rem",padding:"1rem",color:"white",margin:"1rem"}} className='skillsButton'>
+                        Jira
+              </Button>
+              <Button sx={{fontFamily:"Julius Sans One",fontWeight:"900",fontSize:"1rem",padding:"1rem",color:"white",margin:"1rem"}} className='skillsButton'>
+                        Slack
+              </Button>
+        </Box>
+    </Box>
+      </Box>
+    
+
+
       {/* PROJECTS SECTION */}
 
       <Box className="card" sx={{paddingTop:"4rem",paddingBottom:"4rem"}} id="projects">
@@ -166,9 +239,9 @@ const Header = () => {
           PROJECTS
         </Typography>
         <Typography sx={{fontFamily:"Fredericka the Great",fontSize:"4.1rem",transform:"rotateX(180deg)",marginTop:"-3rem",textAlign:"center",color:"#ddffbb31"}}>PROJECTS</Typography>
-        <Box sx={{display:"flex",flexWrap:"wrap",justifyContent:"center",margin:"2rem 7rem"}} >
+        <Box sx={{display:"flex",flexWrap:"wrap",justifyContent:"center",margin:"2rem"}} >
           
-          <Box className="cardGif" sx={{padding:"1rem",margin:"1.5rem 1rem"}}>
+          <Box className="cardGif" sx={{padding:"1rem",margin:"1.5rem 1rem",}}>
             <Card sx={{ maxWidth: 345,margin:"1rem 1rem",backgroundColor:"#000000b3"}}>
               <CardActionArea sx={{padding:"1rem"}}>
                 <CardMedia
@@ -192,7 +265,7 @@ const Header = () => {
           </Box>
               
           <Box className="cardGif" sx={{padding:"1rem",margin:"1.5rem 1rem"}}>
-            <Card sx={{ maxWidth: 345,margin:"1rem 1rem",backgroundColor:"#000000b3" }}>
+            <Card sx={{ maxWidth: 345,margin:"1rem",backgroundColor:"#000000b3" }}>
               <CardActionArea sx={{padding:"1rem"}}>
                 <CardMedia
                   component="img"
@@ -201,7 +274,7 @@ const Header = () => {
                   alt="recipeProject"
                 />
                 <CardContent>
-                  <Typography gutterBottom variant="h5" component="div" sx={{fontFamily: 'Julius Sans One',textAlign:"center",fontWeight:"900",fontSize:"2rem",color:"#DDFFBB"}}>
+                  <Typography gutterBottom variant="h5" component="div" sx={{fontFamily: 'Julius Sans One',textAlign:"center",fontWeight:"900",fontSize:"1.5rem",color:"#DDFFBB"}}>
                     Weather App
                   </Typography>
                 </CardContent>
@@ -256,7 +329,7 @@ const Header = () => {
               </CardActionArea>
               <CardActions>
                 <Button sx={{fontFamily:"Julius Sans One",fontWeight:"900",fontSize:"1rem",position:"relative",margin: "auto",color:"#393053",backgroundColor:"#d8cbff90",marginBottom:"1.5rem"}}>
-                <Link href='https://react-disney.netlify.app/' target='__blank' underline='none' sx={{color:"white"}}>Live</Link>
+                <Link href='https://github.com/hilaldedek/React-Disney' target='__blank' underline='none' sx={{color:"white"}}>Live</Link>
                 </Button>
               </CardActions>
             </Card>
@@ -272,10 +345,16 @@ const Header = () => {
       </Box>
      {/* CONTACT SECTION */}
      <Box sx={{paddingTop:"4rem",paddingBottom:"4rem"}} className="card" id="contact">
-     <Typography sx={{fontFamily:"Fredericka the Great",fontSize:"3.2rem",textAlign:"center",color:"#DDFFBB"}}>
-          CONTACT ME
-        </Typography>
-        <Typography sx={{fontFamily:"Fredericka the Great",fontSize:"3.2rem",transform:"rotateX(180deg)",marginTop:"-2rem",textAlign:"center",color:"#ddffbb31"}}>CONTACT ME</Typography>
+     <Box sx={{display:"flex",flexWrap:"wrap",justifyContent:"center"}}> 
+      <Box sx={{marginBottom:"-4rem"}}>
+        <Typography  sx={{fontFamily:"Fredericka the Great",fontSize:"4.1rem",paddingTop:"2rem",textAlign:"center",color:"#DDFFBB"}}>CONTACT</Typography>
+        <Typography sx={{fontFamily:"Fredericka the Great",fontSize:"4.1rem",transform:"rotateX(180deg)",marginTop:"-3rem",textAlign:"center",color:"#ddffbb31"}}>CONTACT</Typography>
+      </Box>
+      <Box sx={{marginLeft:"1rem"}}>
+        <Typography  sx={{fontFamily:"Fredericka the Great",fontSize:"4.1rem",paddingTop:"2rem",textAlign:"center",color:"#DDFFBB"}}>ME</Typography>
+        <Typography sx={{fontFamily:"Fredericka the Great",fontSize:"4.1rem",transform:"rotateX(180deg)",marginTop:"-3rem",textAlign:"center",color:"#ddffbb31"}}>ME</Typography>
+      </Box>
+    </Box>
         <Box sx={{display:"flex",flexWrap:"wrap",justifyContent:"center",marginTop:"1rem"}}>
           <Box sx={{margin:"1rem",padding:"1rem",borderRadius:"100px"}} className="contactGif">
             <Button sx={{fontFamily:"Julius Sans One",fontWeight:"900",fontSize:"1rem",position:"relative",margin: "auto",color:"white",padding:"1rem"}}>
