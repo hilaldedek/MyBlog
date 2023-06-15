@@ -275,7 +275,7 @@ const Header = () => {
                   alt="recipeProject"
                 />
                 <CardContent>
-                  <Typography gutterBottom variant="h5" component="div" sx={{fontFamily: 'Julius Sans One',textAlign:"center",fontWeight:"900",fontSize:"1.5rem",color:"#DDFFBB"}}>
+                  <Typography gutterBottom variant="h5" component="div" sx={{fontFamily: 'Julius Sans One',textAlign:"center",fontWeight:"900",fontSize:"2rem",color:"#DDFFBB"}}>
                     Weather App
                   </Typography>
                 </CardContent>
