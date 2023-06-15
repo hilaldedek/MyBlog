@@ -9,6 +9,7 @@ import recipe from "../../assets/recipe.png";
 import disney from "../../assets/disney.png";
 import weather from "../../assets/weather.png";
 import todo from "../../assets/todo.png";
+import movieApp from "../../assets/movieapp.png"
 import me from "../../assets/me3.jpg";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -334,7 +335,28 @@ const Header = () => {
               </CardActions>
             </Card>
             </Box>
-            
+            <Box className="cardGif" sx={{padding:"1rem",margin:"1.5rem 1rem",}}>
+            <Card sx={{ maxWidth: 345,margin:"1rem 1rem",backgroundColor:"#000000b3"}}>
+              <CardActionArea sx={{padding:"1rem"}}>
+                <CardMedia
+                  component="img"
+                  height="170"
+                  image={movieApp}
+                  alt="movieAppProject"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="div" sx={{fontFamily: 'Julius Sans One',textAlign:"center",fontWeight:"900",fontSize:"2rem",color:"#DDFFBB"}}>
+                    Movie App
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+              <CardActions>
+                <Button sx={{fontFamily:"Julius Sans One",fontWeight:"900",fontSize:"1rem",position:"relative",margin: "auto",color:"#393053",backgroundColor:"#d8cbff90",marginBottom:"1.5rem"}} >
+                <Link href='https://hilalsmovieapp.netlify.app/' target='__blank' underline='none' sx={{color:"white"}}>Live</Link>
+                </Button>
+              </CardActions>
+            </Card>
+          </Box>
             
         </Box>
         <Box sx={{display:"flex",justifyContent:"center",marginTop:"2rem"}}>
