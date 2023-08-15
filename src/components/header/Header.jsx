@@ -173,14 +173,14 @@ const Header = () => {
 <Box sx={{display:"flex",flexWrap:"wrap",justifyContent:"center"}}>
 <Card sx={{minWidth: 275, width:"25%",padding:"1rem",margin:"1.5rem 1rem"}} className='edu'>
   <Box sx={{margin:"1rem 1rem",backgroundColor:"#000000b3",color:"#DDFFBB"}}>
-<CardContent>
-        <Typography variant="h4" component="div">
+<CardContent sx={{fontFamily:"Julius Sans One"}}>
+        <Typography variant="h4" component="div" sx={{fontFamily:"Julius Sans One"}}>
           Trakya University
         </Typography>
-        <Typography variant="body2" sx={{fontSize:"1.3rem"}}>
+        <Typography variant="body2" sx={{fontSize:"1.3rem",fontFamily:"Julius Sans One"}}>
           Computer Engineering
         </Typography>
-        <Typography variant="p" component="div">
+        <Typography variant="p" component="div" sx={{fontFamily:"Julius Sans One"}}>
           2021-2025
         </Typography>
       </CardContent>
@@ -190,13 +190,13 @@ const Header = () => {
     <Card sx={{ minWidth: 275, width:"25%",padding:"1rem",margin:"1.5rem 1rem"}} className='edu'>
       <Box sx={{margin:"1rem 1rem",backgroundColor:"#000000b3",color:"#DDFFBB"}}>
         <CardContent>
-        <Typography variant="h4" component="div">
+        <Typography variant="h4" component="div" sx={{fontFamily:"Julius Sans One"}}>
           Clarusway
         </Typography>
-        <Typography variant="body2" sx={{fontSize:"1.3rem"}}>
+        <Typography variant="body2" sx={{fontSize:"1.3rem",fontFamily:"Julius Sans One"}}>
           FullStack Bootcamp
         </Typography>
-        <Typography variant="p" component="div">
+        <Typography variant="p" component="div" sx={{fontFamily:"Julius Sans One"}}> 
           2022-2023
         </Typography>
       </CardContent>
@@ -207,10 +207,10 @@ const Header = () => {
     <Card sx={{minWidth: 275, width:"25%",padding:"1rem",margin:"1.5rem 1rem"}} className='edu'>
       <Box sx={{margin:"1rem 1rem",backgroundColor:"#000000b3",color:"#DDFFBB"}}>
 <CardContent>
-        <Typography variant="h4" component="div">
+        <Typography variant="h4" component="div" sx={{fontFamily:"Julius Sans One"}}>
         Lutfi Ege Anatolian High School
         </Typography>
-        <Typography variant="p" component="div">
+        <Typography variant="p" component="div" sx={{fontFamily:"Julius Sans One"}}>
           2017-2021
         </Typography>
       </CardContent>
