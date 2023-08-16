@@ -91,17 +91,17 @@ const Header = () => {
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: 'block', md: 'none'},
+                display: { xs: 'block', md: 'none'}
               }}
             >
             
               
                 <Box onClick={handleCloseNavMenu} sx={{display:"flex",flexDirection:"column"}}>
-                <Button textAlign="center"sx={{fontFamily:"Julius Sans One"}}><Link href='#skills' sx={{textDecoration:"none",color:"#18122B"}}>Skills</Link>
+                <Button textalign="center"sx={{fontFamily:"Julius Sans One"}}><Link href='#skills' sx={{textDecoration:"none",color:"#18122B"}}>Skills</Link>
                     </Button>
-                  <Button textAlign="center"sx={{fontFamily:"Julius Sans One"}}><Link href='#projects' sx={{textDecoration:"none",color:"#18122B"}}>Projects</Link>
+                  <Button textalign="center"sx={{fontFamily:"Julius Sans One"}}><Link href='#projects' sx={{textDecoration:"none",color:"#18122B"}}>Projects</Link>
                     </Button>
-                    <Button textAlign="center"sx={{color:"#18122B",fontFamily:"Julius Sans One"}}><Link href='#contact' sx={{textDecoration:"none",color:"#18122B"}}>Contact</Link>
+                    <Button textalign="center"sx={{color:"#18122B",fontFamily:"Julius Sans One"}}><Link href='#contact' sx={{textDecoration:"none",color:"#18122B"}}>Contact</Link>
                     </Button>
                 </Box>
               
@@ -172,7 +172,7 @@ const Header = () => {
         <Typography sx={{fontFamily:"Fredericka the Great",fontSize:"3.7rem",transform:"rotateX(180deg)",marginTop:"-3rem",textAlign:"center",color:"#ddffbb31"}}>EDUCATION</Typography>
 <Box sx={{display:"flex",flexWrap:"wrap",justifyContent:"center"}}>
 <Card sx={{minWidth: 275, width:"25%",padding:"1rem",margin:"1rem",display:"flex",justifyContent:"center",alignItems:"center"}} className='edu'>
-  <Box sx={{backgroundColor:"#000000e5",color:"#DDFFBB",padding:"1rem"}}>
+  <Box sx={{backgroundColor:"#000000b3",color:"#DDFFBB",padding:"1rem"}}>
 <CardContent sx={{fontFamily:"Julius Sans One"}}>
         <Typography variant="h4" component="div" sx={{fontFamily:"Julius Sans One"}}>
           Trakya University
@@ -188,7 +188,7 @@ const Header = () => {
     </Card>
 
     <Card sx={{ minWidth: 275, width:"25%",padding:"1rem",margin:"1rem",display:"flex",justifyContent:"center",alignItems:"center"}} className='edu'>
-      <Box sx={{backgroundColor:"#000000e5",color:"#DDFFBB",padding:"1rem"}}>
+      <Box sx={{backgroundColor:"#000000b3",color:"#DDFFBB",padding:"1rem"}}>
         <CardContent >
         <Typography variant="h4" component="div" sx={{fontFamily:"Julius Sans One"}}>
           Clarusway
@@ -205,7 +205,7 @@ const Header = () => {
     </Card>
 
     <Card sx={{minWidth: 275, width:"25%",padding:"1rem",margin:"1rem",display:"flex",justifyContent:"center",alignItems:"center"}} className='edu'>
-      <Box sx={{backgroundColor:"#000000e5",color:"#DDFFBB",padding:"1rem"}}>
+      <Box sx={{backgroundColor:"#000000b3",color:"#DDFFBB",padding:"1rem"}}>
 <CardContent>
         <Typography variant="h4" component="div" sx={{fontFamily:"Julius Sans One"}}>
         Lutfi Ege Anatolian High School
@@ -226,7 +226,7 @@ const Header = () => {
         <Typography sx={{fontFamily:"Fredericka the Great",fontSize:"3.3rem",transform:"rotateX(180deg)",marginTop:"-3rem",textAlign:"center",color:"#ddffbb31"}}>EXPERIENCE</Typography>
         <Box sx={{display:"flex",justifyContent:"center"}}>
         <Card sx={{minWidth: 275, width:"25%",padding:"1rem",margin:"1rem",display:"flex",justifyContent:"center",alignItems:"center"}} className='edu'>
-      <Box sx={{backgroundColor:"#000000e5",color:"#DDFFBB",padding:"1rem"}}>
+      <Box sx={{backgroundColor:"#000000b3",color:"#DDFFBB",padding:"1rem"}}>
 <CardContent>
         <Typography variant="h4" component="div" sx={{fontFamily:"Julius Sans One"}}>
         Microsoft
@@ -246,7 +246,7 @@ const Header = () => {
 
   {/*Volunteer Work*/}
 <Box className="card" sx={{position:"relative",margin:"auto",paddingBottom:"2rem"}}>
-<Box sx={{display:"flex",flexWrap:"wrap",justifyContent:"center"}} id="skills"> 
+<Box sx={{display:"flex",flexWrap:"wrap",justifyContent:"center"}}> 
       <Box sx={{marginBottom:"-4rem"}}>
         <Typography  sx={{fontFamily:"Fredericka the Great",fontSize:"3.5rem",paddingTop:"2rem",textAlign:"center",color:"#DDFFBB"}}>VOLUNTEER</Typography>
         <Typography sx={{fontFamily:"Fredericka the Great",fontSize:"3.5rem",transform:"rotateX(180deg)",marginTop:"-3rem",textAlign:"center",color:"#ddffbb31"}}>VOLUNTEER</Typography>
@@ -260,7 +260,7 @@ const Header = () => {
 
         <Box sx={{display:"flex",justifyContent:"center"}}>
         <Card sx={{minWidth: 275, width:"25%",padding:"1rem",margin:"1rem",display:"flex",justifyContent:"center",alignItems:"center"}} className='edu'>
-      <Box sx={{backgroundColor:"#000000e5",color:"#DDFFBB",padding:"1rem"}}>
+      <Box sx={{backgroundColor:"#000000b3",color:"#DDFFBB",padding:"1rem"}}>
 <CardContent>
         <Typography variant="h4" component="div" sx={{fontFamily:"Julius Sans One"}}>
         KVKK
