@@ -167,12 +167,12 @@ const Header = () => {
       </Box>
 
 {/* EDUCATİON */}
-<Box className="card" sx={{position:"relative",margin:"auto"}}>
+<Box className="card" sx={{position:"relative",margin:"auto",paddingBottom:"2rem"}}>
         <Typography  sx={{fontFamily:"Fredericka the Great",fontSize:"3.7rem",paddingTop:"2rem",textAlign:"center",color:"#DDFFBB"}}>EDUCATION</Typography>
         <Typography sx={{fontFamily:"Fredericka the Great",fontSize:"3.7rem",transform:"rotateX(180deg)",marginTop:"-3rem",textAlign:"center",color:"#ddffbb31"}}>EDUCATION</Typography>
 <Box sx={{display:"flex",flexWrap:"wrap",justifyContent:"center"}}>
-<Card sx={{minWidth: 275, width:"25%",padding:"1rem",margin:"1.5rem 1rem"}} className='edu'>
-  <Box sx={{margin:"1rem 1rem",backgroundColor:"#000000b3",color:"#DDFFBB"}}>
+<Card sx={{minWidth: 275, width:"25%",padding:"1rem",margin:"1rem",display:"flex",justifyContent:"center",alignItems:"center"}} className='edu'>
+  <Box sx={{backgroundColor:"#000000e5",color:"#DDFFBB",padding:"1rem"}}>
 <CardContent sx={{fontFamily:"Julius Sans One"}}>
         <Typography variant="h4" component="div" sx={{fontFamily:"Julius Sans One"}}>
           Trakya University
@@ -187,9 +187,9 @@ const Header = () => {
   </Box>
     </Card>
 
-    <Card sx={{ minWidth: 275, width:"25%",padding:"1rem",margin:"1.5rem 1rem"}} className='edu'>
-      <Box sx={{margin:"1rem 1rem",backgroundColor:"#000000b3",color:"#DDFFBB"}}>
-        <CardContent>
+    <Card sx={{ minWidth: 275, width:"25%",padding:"1rem",margin:"1rem",display:"flex",justifyContent:"center",alignItems:"center"}} className='edu'>
+      <Box sx={{backgroundColor:"#000000e5",color:"#DDFFBB",padding:"1rem"}}>
+        <CardContent >
         <Typography variant="h4" component="div" sx={{fontFamily:"Julius Sans One"}}>
           Clarusway
         </Typography>
@@ -204,8 +204,8 @@ const Header = () => {
       
     </Card>
 
-    <Card sx={{minWidth: 275, width:"25%",padding:"1rem",margin:"1.5rem 1rem"}} className='edu'>
-      <Box sx={{margin:"1rem 1rem",backgroundColor:"#000000b3",color:"#DDFFBB"}}>
+    <Card sx={{minWidth: 275, width:"25%",padding:"1rem",margin:"1rem",display:"flex",justifyContent:"center",alignItems:"center"}} className='edu'>
+      <Box sx={{backgroundColor:"#000000e5",color:"#DDFFBB",padding:"1rem"}}>
 <CardContent>
         <Typography variant="h4" component="div" sx={{fontFamily:"Julius Sans One"}}>
         Lutfi Ege Anatolian High School
@@ -219,6 +219,62 @@ const Header = () => {
     </Card>
 </Box>
 </Box>
+
+{/* EXPERİENCE */}
+<Box className="card" sx={{position:"relative",margin:"auto",paddingBottom:"2rem"}}>
+        <Typography  sx={{fontFamily:"Fredericka the Great",fontSize:"3.3rem",paddingTop:"2rem",textAlign:"center",color:"#DDFFBB"}}>EXPERIENCE</Typography>
+        <Typography sx={{fontFamily:"Fredericka the Great",fontSize:"3.3rem",transform:"rotateX(180deg)",marginTop:"-3rem",textAlign:"center",color:"#ddffbb31"}}>EXPERIENCE</Typography>
+        <Box sx={{display:"flex",justifyContent:"center"}}>
+        <Card sx={{minWidth: 275, width:"25%",padding:"1rem",margin:"1rem",display:"flex",justifyContent:"center",alignItems:"center"}} className='edu'>
+      <Box sx={{backgroundColor:"#000000e5",color:"#DDFFBB",padding:"1rem"}}>
+<CardContent>
+        <Typography variant="h4" component="div" sx={{fontFamily:"Julius Sans One"}}>
+        Microsoft
+        </Typography>
+        <Typography variant="body2" sx={{fontSize:"1.3rem",fontFamily:"Julius Sans One"}}>
+        IMAGINER Student Ambassador
+        </Typography>
+        <Typography variant="p" component="div" sx={{fontFamily:"Julius Sans One"}}>
+          2022
+        </Typography>
+      </CardContent>
+      </Box>
+      
+    </Card>
+</Box>
+  </Box>
+
+  {/*Volunteer Work*/}
+<Box className="card" sx={{position:"relative",margin:"auto",paddingBottom:"2rem"}}>
+<Box sx={{display:"flex",flexWrap:"wrap",justifyContent:"center"}} id="skills"> 
+      <Box sx={{marginBottom:"-4rem"}}>
+        <Typography  sx={{fontFamily:"Fredericka the Great",fontSize:"3.5rem",paddingTop:"2rem",textAlign:"center",color:"#DDFFBB"}}>VOLUNTEER</Typography>
+        <Typography sx={{fontFamily:"Fredericka the Great",fontSize:"3.5rem",transform:"rotateX(180deg)",marginTop:"-3rem",textAlign:"center",color:"#ddffbb31"}}>VOLUNTEER</Typography>
+      </Box>
+      <Box sx={{marginLeft:"1rem"}}>
+        <Typography  sx={{fontFamily:"Fredericka the Great",fontSize:"3.5rem",paddingTop:"2rem",textAlign:"center",color:"#DDFFBB"}}>WORK</Typography>
+        <Typography sx={{fontFamily:"Fredericka the Great",fontSize:"3.5rem",transform:"rotateX(180deg)",marginTop:"-3rem",textAlign:"center",color:"#ddffbb31"}}>WORK</Typography>
+      </Box>
+    </Box>
+
+
+        <Box sx={{display:"flex",justifyContent:"center"}}>
+        <Card sx={{minWidth: 275, width:"25%",padding:"1rem",margin:"1rem",display:"flex",justifyContent:"center",alignItems:"center"}} className='edu'>
+      <Box sx={{backgroundColor:"#000000e5",color:"#DDFFBB",padding:"1rem"}}>
+<CardContent>
+        <Typography variant="h4" component="div" sx={{fontFamily:"Julius Sans One"}}>
+        KVKK
+        </Typography>
+        <Typography variant="body2" sx={{fontSize:"1.3rem",fontFamily:"Julius Sans One"}}>
+        Personal Data Protection Volunteer
+        </Typography>
+      </CardContent>
+      </Box>
+      
+    </Card>
+</Box>
+  </Box>
+
 
       {/* SKILLS SECTİON */}
       <Box className="card" sx={{padding:"1rem"}}>
