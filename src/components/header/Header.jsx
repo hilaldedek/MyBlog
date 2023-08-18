@@ -223,7 +223,7 @@ const Header = () => {
 {/* EXPERİENCE */}
 <Box className="card" sx={{position:"relative",margin:"auto",paddingBottom:"2rem"}}>
         <Typography  sx={{fontFamily:"Fredericka the Great",fontSize:"3.3rem",paddingTop:"2rem",textAlign:"center",color:"#DDFFBB"}}>EXPERIENCE</Typography>
-        <Typography sx={{fontFamily:"Fredericka the Great",fontSize:"3.3rem",transform:"rotateX(180deg)",marginTop:"-3rem",textAlign:"center",color:"#ddffbb31"}}>EXPERIENCE</Typography>
+        <Typography sx={{fontFamily:"Fredericka the Great",fontSize:"3.3rem",transform:"rotateX(180deg)",marginTop:"-2.5rem",textAlign:"center",color:"#ddffbb31"}}>EXPERIENCE</Typography>
         <Box sx={{display:"flex",justifyContent:"center"}}>
         <Card sx={{minWidth: 275, width:"25%",padding:"1rem",margin:"1rem",display:"flex",justifyContent:"center",alignItems:"center"}} className='edu'>
       <Box sx={{backgroundColor:"#000000b3",color:"#DDFFBB",padding:"1rem"}}>
@@ -249,11 +249,11 @@ const Header = () => {
 <Box sx={{display:"flex",flexWrap:"wrap",justifyContent:"center"}}> 
       <Box sx={{marginBottom:"-4rem"}}>
         <Typography  sx={{fontFamily:"Fredericka the Great",fontSize:"3.5rem",paddingTop:"2rem",textAlign:"center",color:"#DDFFBB"}}>VOLUNTEER</Typography>
-        <Typography sx={{fontFamily:"Fredericka the Great",fontSize:"3.5rem",transform:"rotateX(180deg)",marginTop:"-3rem",textAlign:"center",color:"#ddffbb31"}}>VOLUNTEER</Typography>
+        <Typography sx={{fontFamily:"Fredericka the Great",fontSize:"3.5rem",transform:"rotateX(180deg)",marginTop:"-2.6rem",textAlign:"center",color:"#ddffbb31"}}>VOLUNTEER</Typography>
       </Box>
       <Box sx={{marginLeft:"1rem"}}>
         <Typography  sx={{fontFamily:"Fredericka the Great",fontSize:"3.5rem",paddingTop:"2rem",textAlign:"center",color:"#DDFFBB"}}>WORK</Typography>
-        <Typography sx={{fontFamily:"Fredericka the Great",fontSize:"3.5rem",transform:"rotateX(180deg)",marginTop:"-3rem",textAlign:"center",color:"#ddffbb31"}}>WORK</Typography>
+        <Typography sx={{fontFamily:"Fredericka the Great",fontSize:"3.5rem",transform:"rotateX(180deg)",marginTop:"-2.6rem",textAlign:"center",color:"#ddffbb31"}}>WORK</Typography>
       </Box>
     </Box>
 
